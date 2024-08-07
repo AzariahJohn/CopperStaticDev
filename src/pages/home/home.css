@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.hero-outer-container{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.copper-logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.copper-logo{
+    width: 30px;
+    height: 33.79px;
+    margin-right: 10px;
+}
+
+.copper-logo-text{
+    font-size: 24px;
+    font-weight: 800px;
+    font-family: "Rethink Sans", sans-serif;
+}
+
+.copper-logo-wrapper{
+    color: white;
+}
+
+.hero-text-wrapper{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-text-one{
+    background: -webkit-linear-gradient(#ffffff, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 70px;
+}
+
+.hero-text-two{
+    background: -webkit-linear-gradient(#4776E6, #8E54E9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 160px;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 150px;
+    position: relative;
+    height: 135px;
+}
+
+.hero-description{
+    font-family: "Inter", sans-serif;
+    color: #999999;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    width: 650px;
+    margin-top: 40px;
+}
+
+.hero-input-wrapper{
+    height: 66px;
+    width: 600px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    margin-top: 120px;
+}
+
+.hero-input-btn{
+    height: 60px;
+    background: linear-gradient(#4776E6, #8E54E9);
+    border-radius: 40px;
+    width: 232px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.hero-input{
+    height: 100%;
+    width: 350px;
+    border-radius: 40px;
+    padding: 0px 0px 0px 34px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero-input::placeholder{
+    color: #343434;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.star-top{
+    position: absolute;
+}
+
+.star-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.arrow-icon{
+    font-size: '1.2rem'
+}
+
+@media only screen and (max-width: 800px){
+    .copper-logo-text{
+        font-size: 18px;
+    }
+
+    .copper-logo{
+        width: 20px;
+    }
+
+    .hero-text-one{
+        font-size: 50px;
+    }
+
+    .hero-text-two{
+        font-size: 120px;
+        height: 110px;
+        text-align: center;
+        line-height: 120px;
+    }
+
+    .star-top{
+        height: 10px;
+    }
+
+    .hero-description{
+        font-size: 14px;
+        line-height: 20px;
+        width: 500px;
+    }
+
+    .hero-input-wrapper{
+        width: 450px;
+        height: 55px;
+    }
+
+    .hero-input-btn{
+        font-size: 10px;
+        line-height: 15px;
+        padding: 0px 20px;
+        height: 100%;
+    }
+
+    .hero-input::placeholder{
+        color: #343434;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .arrow-icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .hero-text-one{
+        font-size: 30px;
+    }
+
+    .hero-text-two{
+        font-size: 70px;
+        height: 75px;
+        text-align: center;
+        line-height: 80px;
+        margin-top: -20px;
+    }
+
+    .hero-description{
+        font-size: 12px;
+        width: 300px;
+        line-height: 15px;
+    }
+
+    .hero-input-wrapper{
+        width: 280px;
+        height: 45px;
+    }
+
+    .hero-input{
+        font-size: 10px;
+        width: 160px;
+        padding: 0px 15px;
+    }
+
+    .hero-input::placeholder{
+        color: #343434;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .hero-input-btn{
+        font-size: 8px;
+        padding: 0px 10px;
+        height: 100%;
+    }
+
+    .arrow-icon{
+        display: none;
+    }
+}
