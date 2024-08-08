@@ -10,14 +10,18 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+
 .hero-outer-container{
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
+    padding: 10px 10px 100px 10px;
 }
 
 .copper-logo-wrapper{
@@ -86,7 +90,7 @@
 
 .hero-input-wrapper{
     height: 66px;
-    width: 600px;
+    max-width: 600px;
     border-radius: 40px;
     background-color: white;
     display: flex;
@@ -177,7 +181,7 @@ textarea:focus, input:focus{
     }
 
     .hero-input-wrapper{
-        width: 450px;
+        max-width: 450px;
         height: 55px;
     }
 
@@ -220,7 +224,7 @@ textarea:focus, input:focus{
     }
 
     .hero-input-wrapper{
-        width: 280px;
+        max-width: 280px;
         height: 45px;
     }
 
